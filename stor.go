@@ -3,21 +3,23 @@ package main
 import (
 	"fmt"
 	"log"
-	"math/random"
+	//	"math/rand"
 	"time"
 
-	"github.com/alexcesaro/statsd"
+	//	"github.com/alecthomas/kingpin"
+	//	"github.com/alexcesaro/statsd"
 	"github.com/buaazp/fasthttprouter"
 	"github.com/valyala/fasthttp"
 )
 
 var version = "master"
 
-type storages [][]string
-
 func main() {
 
-	storList := storages{[]string{"a1", "a2"}, []string{"b1", "b2"}}
+	storList := storages{storage{FILESTORAGE, []string{
+		"/nfs/prg24-004.srv.int.avast.com/data/storage/Samples",
+		"/nfs/prg24-010.srv.int.avast.com/data/storage/Samples",
+	}, 0}, storage{FILESTORAGE, []string{"b1", "b2"}, 0}}
 
 	fmt.Println("%+v", storList)
 
@@ -27,7 +29,6 @@ func main() {
 	router.GET("/", aboutHandler)
 
 	log.Fatal(fasthttp.ListenAndServe(":8080", router.Handler))
-
 }
 
 func getFileHandler(ctx *fasthttp.RequestCtx) {

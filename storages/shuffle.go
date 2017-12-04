@@ -1,0 +1,4 @@
+package storages
+
+func Shuffle() {
+}

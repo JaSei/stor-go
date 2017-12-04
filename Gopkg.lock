@@ -2,6 +2,24 @@
 
 
 [[projects]]
+  name = "github.com/alecthomas/kingpin"
+  packages = ["."]
+  revision = "1087e65c9441605df944fb12c33f0fe7072d18ca"
+  version = "v2.2.5"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/alecthomas/template"
+  packages = [".","parse"]
+  revision = "a0175ee3bccc567396460bf5acd36800cb10c49c"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/alecthomas/units"
+  packages = ["."]
+  revision = "2efee857e7cfd4f3d0138cc3cbb1b4966962b93a"
+
+[[projects]]
   name = "github.com/alexcesaro/statsd"
   packages = ["."]
   revision = "7fea3f0d2fab1ad973e641e51dba45443a311a90"
@@ -40,6 +58,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "a31e4f09e4ae68e11bf123f6206c29c78d78724d075eca1c5e7d877e96b17c89"
+  inputs-digest = "7b7935f9ddc97651d90ccf54cf013e094d13d1494acdb6e4de3d42848408718c"
   solver-name = "gps-cdcl"
   solver-version = 1
