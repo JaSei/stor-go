@@ -20,16 +20,22 @@
   revision = "2efee857e7cfd4f3d0138cc3cbb1b4966962b93a"
 
 [[projects]]
-  name = "github.com/alexcesaro/statsd"
-  packages = ["."]
-  revision = "7fea3f0d2fab1ad973e641e51dba45443a311a90"
-  version = "v2.0.0"
-
-[[projects]]
   name = "github.com/buaazp/fasthttprouter"
   packages = ["."]
   revision = "ade4e2031af3aed7fffd241084aad80a58faf421"
   version = "v0.1.1"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/hashicorp/errwrap"
+  packages = ["."]
+  revision = "7554cd9344cec97297fa6649b055a8c98c2a1e55"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/hashicorp/go-multierror"
+  packages = ["."]
+  revision = "b7773ae218740a7be65057fc60b366a49b538a44"
 
 [[projects]]
   name = "github.com/klauspost/compress"
@@ -50,6 +56,12 @@
   version = "v1.1"
 
 [[projects]]
+  name = "github.com/pkg/errors"
+  packages = ["."]
+  revision = "645ef00459ed84a119197bfb8d8205042c6df63d"
+  version = "v0.8.0"
+
+[[projects]]
   name = "github.com/valyala/fasthttp"
   packages = [".","fasthttputil"]
   revision = "d42167fd04f636e20b005e9934159e95454233c7"
@@ -58,6 +70,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "7b7935f9ddc97651d90ccf54cf013e094d13d1494acdb6e4de3d42848408718c"
+  inputs-digest = "66403c80da3c226ade9fd4b947f19a52ffa74415c28f765f5bd6b0d9a3ac073e"
   solver-name = "gps-cdcl"
   solver-version = 1
