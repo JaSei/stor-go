@@ -2,6 +2,12 @@
 
 
 [[projects]]
+  name = "github.com/JaSei/pathutil-go"
+  packages = ["."]
+  revision = "2b132b41bf4dc427d5101e6dd6d3970f0ea52235"
+  version = "0.1.0"
+
+[[projects]]
   name = "github.com/alecthomas/kingpin"
   packages = ["."]
   revision = "1087e65c9441605df944fb12c33f0fe7072d18ca"
@@ -24,6 +30,12 @@
   packages = ["."]
   revision = "ade4e2031af3aed7fffd241084aad80a58faf421"
   version = "v0.1.1"
+
+[[projects]]
+  name = "github.com/davecgh/go-spew"
+  packages = ["spew"]
+  revision = "346938d642f2ec3594ed81d874461961cd0faa76"
+  version = "v1.1.0"
 
 [[projects]]
   branch = "master"
@@ -62,6 +74,18 @@
   version = "v0.8.0"
 
 [[projects]]
+  name = "github.com/pmezard/go-difflib"
+  packages = ["difflib"]
+  revision = "792786c7400a136282c1664665ae0a8db921c6c2"
+  version = "v1.0.0"
+
+[[projects]]
+  name = "github.com/stretchr/testify"
+  packages = ["assert"]
+  revision = "12b6f73e6084dad08a7c6e575284b177ecafbc71"
+  version = "v1.2.1"
+
+[[projects]]
   name = "github.com/valyala/fasthttp"
   packages = [".","fasthttputil"]
   revision = "d42167fd04f636e20b005e9934159e95454233c7"
@@ -70,6 +94,6 @@
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "66403c80da3c226ade9fd4b947f19a52ffa74415c28f765f5bd6b0d9a3ac073e"
+  inputs-digest = "e7a2308ffa98c6b98f582c2fae82ab1d4ed18fee3f1d16b3c9ee4a1d3ebfb9b2"
   solver-name = "gps-cdcl"
   solver-version = 1

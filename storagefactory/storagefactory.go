@@ -1,6 +1,11 @@
 /*
 storagefactory ...
 
+	smb://domain;user:pass@host/share/path
+	nfs://host:port/path
+	s3://aswKeyId:aswSecretAccessKey@hostname/bucket
+
+
 	storageFactory := storagefactory.New(s3storage.New, filestorage.New)
 	storages, err := storageFactory.ParseFromStrings([]string{
 		"file;/tmp/dir,/tmp/other",
